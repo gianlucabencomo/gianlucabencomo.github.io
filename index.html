@@ -1,136 +1,74 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4C6XFXPF4"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'G-Y4C6XFXPF4');
-        </script>
-        
-        <title>Gianluca Bencomo</title>
-        <link rel="icon" href="./img/favicon.png">
-                
-        <meta charset="UTF-8">
-        <meta name="description" content="Gianluca Bencomo's landing page / personal website for professional contacts, bio, and social links">
-        <meta name="keywords" content="gianluca bencomo, computer science, research, machine learning, math, princeton, whittier,">
-        <meta name="author" content="Gianluca Bencomo">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-        <meta name="google-site-verification" content="ecgGASIgl7Mn41axpEzAQgZvp4zQ08vZvIiHW6OePLw" />        
-        
-        <style>
-            body {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 1rem;
-                margin: 0 auto;
-                font-family: Arial, Helvetica, sans-serif;
-                }
-            .left, .right, .links, .awards, .presentations, .papers {
-                padding-left: 20px;
-                padding-right: 20px;
-                }
-            .topnav {
-                overflow: hidden;
-                background-color: #333;
-                }
+<!doctype html>
+<html lang="en">
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4C6XFXPF4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-Y4C6XFXPF4');
+    </script>
 
-            .topnav a {
-                float: left;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-                }
-            .topnav a:hover {
-                background-color: #ddd;
-                color: black;
-                }
-            #logo {
-                float: right;
-                height: 44px;
-                margin-right: 20px;
-                }    
-            @media (max-width: 600px) { 
-                .topnav{
-                    display:none;
-                }
-            }
-        </style>
-    
-    </head>
-  
-    <body>
-        <div class="wrapper">     
-            
-            <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#links">Links</a>
-                <a href="#awards">Awards</a>
-                <a href="#presentations">Presentations</a>
-                <a href="#papers">Papers</a>
-                <img src="img/princeton_seal.svg" id="logo" />
-            </div>
-            
-            <div class="left" id="home">
-                <img src="img/gianluca.JPG" width="350" style="padding-top: 20px" />
-                <h1>Gianluca Bencomo</h1>
-                <h4>Computer Science Graduate Student at Princeton University</h4>
-            </div>
-            
-            <div class="right">
-                <p class="bio">
-                    I am a graduate student at Princeton University where I am currently advised by <a href="https://cocosci.princeton.edu/tom/index.php">Tom Griffiths</a>.
-                    <br><br>
-                    I am interested in probabilistic models that capture the properties of realistic environments and human cognitive limitations. That is, I study systems that (1) have limited storage, (2) observe complex multi-task distributions, and (3) observe primarily slow task shifts with stochastic shifts that are more rapid, but less frequent. I believe this reflects an inherently 'human' class of problems. Methods of interest include Bayesian nonparametrics, Bayesian filtering, and MCMC. 
-                    <br><br>
-                    I did my undergraduate coursework at Whittier College, where I studied Biochemistry, and held a two-year appointment with the <a href="http://www.hms.harvard.edu/bss/neuro/bornlab/">Born Lab</a> where I studied visual perception. More details regarding my qualifications, and research experiences, can be found <a href="./CV.pdf">here</a>.
-                </p>
-            </div>
+    <meta charset="utf-8">
+    <link rel="icon" href="./img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Gianluca Bencomo's landing page / personal website for professional contacts, bio, and socia    l links">
+    <meta name="keywords" content="gianluca bencomo, computer science, research, machine learning, math, princeton, whittier,">
+    <meta name="author" content="Gianluca Bencomo">
+    <meta name="google-site-verification" content="ecgGASIgl7Mn41axpEzAQgZvp4zQ08vZvIiHW6OePLw" />
+    <title>Gianluca Bencomo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
 
-            <div class="links" id="links">
-                <h4>Links</h4>
-                <ul class="social-links">
-                    <li><a href="https://github.com/gianlucabencomo">Github</a></li>
-                    <li><a href="https://twitter.com/gianlucabencomo">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/in/gianluca-bencomo-326469133/">LinkedIn</a></li>
-                    <li><a href="https://scholar.google.com/citations?user=xSS55BgAAAAJ&hl=en">Google Scholar</a></li>
-                </ul>
-            </div>
-
-            <div class="awards" id="awards">
-                <h4>Awards</h4>
-                <ul>
-                    <li>W. Roy Newsome Award in Chemistry (Whittier College, 2021)</li>
-                    <li>2019 Harvard-Amgen Scholars Fellowship Recipient</li>
-                    <li>2018 Keck Undergraduate Research Fellowship Recipient</li>
-                </ul>
-            </div>
-
-            <div class="presentations" id="presentations">
-                <h4>Presentations</h4>
-                <ul>
-                    <li>Bencomo, G.M., (May 2021). <b>Drug-Drug Interaction Prediction with Gaussian Processes.</b> Senior Thesis, Department of Chemistry, Whittier College, CA.</li>
-                    <li>Bencomo, G.M., Drugowitsch, J., & Born, R.T., (August 2019). <b>Perceptual Decision Making: More Than Meets the Eye.</b> Research presented and poster session at the Harvard Summer Research Symposium, Cambridge, MA.</li>
-                    <li>Bencomo, G.M. & Jones, S., (August 2018). <b>Electrochemical Production of Oxygen and Methane on Mars by In-Situ Resource Utilization.</b> Research presented at the Electrochemical Technologies Division at NASA JPL, Pasadena, CA.</li>
-                </ul>
-            </div>
-
-            <div class="papers" id="papers">
-                <h4>Papers</h4>
-                <ul>    
-                    <li>Born, R.T., & Bencomo, G.M. (2021). <b>Illusions, Delusions, and Your Backwards Bayesian Brain: A Biased Visual Perspective.</b> Brain, Behavior and Evolution, 1-14. (<a href="./papers/illusions.pdf">pdf</a>)</li>
-                    <li>Bencomo, G.M., & Jones S.C. (2018). <b>Electrochemical Production of Oxygen and Methane on Mars by In-Situ Resource Utilization.</b> NASA Technical Reports Server: NTRS. [Washington, D.C.].
-                    <li>Gunasekara, O., Jia, H., Twagirayezu, F., Bencomo, G.M., Garcia, A.Z., Nikaido, B.E., Garcia, J.A., & Melton, J.E. (2016). <b>small Unmanned Aerial Vehicles Modeling and Testing.</b> NASA Technical Reports Server: NTRS. [Washington, D.C.].</li>
-                </ul>
-            </div>        
-
+    <div id="dhead" class="container">
+      <div class="row">
+        <div id="dpic">
+          <img src="img/gianluca.JPG" class="ppic" />
         </div>
+        <div id="ddesc">
+          <h1>Gianluca Bencomo</h1>
+          <h2>PhD Student at Princeton University</h2>
+          <div id="dico">
+            <a href="https://twitter.com/gianlucabencomo"><img src="img/ctwitter.svg" class="iico" /></a>
+            <a href="https://github.com/gianlucabencomo"><img src="img/cgithub.svg" class="iico"/></a>
+            <a href="https://linkedin.com/in/gianluca-bencomo-326469133"><img src="img/crss.svg" class="iico" /></a>
+            <a href="https://scholar.google.com/citations?user=xSS55BgAAAAJ&hl=en"><img src="img/crss.svg" class="iico" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="ctitle">Biography</div>
+      <div>
+        I am a computer science PhD student at Princeton University advised by <a href="https://cocosci.princeton.edu/tom/index.php">Tom Griffiths</a>. My CV can be found <a href="./CV.pdf">here</a>.
+    </div>
+    </div>    
+
+    <div style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="ctitle">Publications</div>
+
+      <div class="pub">
+        <div class="pub-title"><a href="./papers/illusions.pdf">Illusions, Delusions, and Your Backwards Bayesian Brain: A Biased Visual Perspective.</a></div>
+        <div class="pub-venue">Brain, Behavior and Evolution</div>
+        <div class="pub-authors">Richard T. Born, Gianluca M. Bencomo</div>
+      </div>
+
+    </div>
+    </div>
+   
+    <div style="padding-top: 1px; margin-top: 30px; padding-bottom: 30px;"> 
+    <div class="container">
+      <div>
+        <b>Acknowledgement:</b> I shamelessly stole this clean and lightweight website template from  <a href="https://karpathy.ai/">Andrej Karpathy</a>. 
+    </div>
+    </div>
+    </div>
+
     </body>
 </html>
