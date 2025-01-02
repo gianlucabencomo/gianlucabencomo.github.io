@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./img/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gianluca Bencomo's personal website: professional contacts, bio, publications, and social links">
+    <meta name="keywords" content="Gianluca Bencomo, machine learning, Princeton, research, computer science">
+    <meta name="author" content="Gianluca Bencomo">
+    <meta name="google-site-verification" content="ecgGASIgl7Mn41axpEzAQgZvp4zQ08vZvIiHW6OePLw">
+    <title>Gianluca Bencomo</title>
+    <link rel="stylesheet" href="style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y4C6XFXPF4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -8,88 +17,132 @@
         gtag('js', new Date());
         gtag('config', 'G-Y4C6XFXPF4');
     </script>
-
-    <meta charset="utf-8">
-    <link rel="icon" href="./img/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Gianluca Bencomo's landing page / personal website for professional contacts, bio, and social links">
-    <meta name="keywords" content="gianluca bencomo, computer science, research, machine learning, math, princeton, whittier,">
-    <meta name="author" content="Gianluca Bencomo">
-    <meta name="google-site-verification" content="ecgGASIgl7Mn41axpEzAQgZvp4zQ08vZvIiHW6OePLw" />
-    <title>Gianluca Bencomo</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-
-    <div id="dhead" class="container">
-        <div id="dpic">
-          <img src="img/gianluca.JPG" class="ppic" />
+    <!-- Header Section -->
+    <header>
+      <div class="header-container">
+        <div class="header-left">
+            <h1 class="header-name"><a href="./index.html">Gianluca Bencomo</a></h1>
         </div>
-        
-        <div id="ddesc">
-          <h1>Gianluca Bencomo</h1>
-          <h2>PhD Student at Princeton University</h2>
-          <div id="dico">
-            <a href="https://twitter.com/gianlucabencomo">Twitter</a>
-            <a href="https://github.com/gianlucabencomo">Github</a>
-            <a href="https://linkedin.com/in/gianluca-bencomo-326469133">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=xSS55BgAAAAJ&hl=en">Google Scholar</a>
+        <div class="header-right">
+          <a href="https://x.com/gianlucabencomo" aria-label="Visit X">X</a>
+          <a href="https://github.com/gianlucabencomo" aria-label="Visit GitHub">GitHub</a>
+          <a href="https://linkedin.com/in/gianluca-bencomo-326469133" aria-label="Visit LinkedIn">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=xSS55BgAAAAJ&hl=en" aria-label="Visit Google Scholar">Google Scholar</a>
+          <a href="./blog.html" aria-label="Visit Blog">Blog</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Biography Section -->
+      <section id="biography" class="container">
+        <h2>Biography</h2>    
+        <div class="bio-content">
+          <img src="img/gianluca.jpg" alt="Portrait of Gianluca Bencomo" class="bio-img">
+          <div class="bio-text">
+            <p>
+              I am a computer science PhD student at Princeton University advised by 
+              <a href="https://cocosci.princeton.edu/tom/index.php">Tom Griffiths</a>. My CV == 
+              <a href="./CV.pdf">CV</a>.
+            </p>
           </div>
         </div>
-    </div>
+      </section>
 
-    <hr>
-
-    <div class="container">
-      <div class="ctitle">Biography</div>
-      <div>
-        I am a computer science PhD student at Princeton University advised by <a href="https://cocosci.princeton.edu/tom/index.php">Tom Griffiths</a>. My CV == <a href="./CV.pdf">CV</a>.
-    </div>
-    </div>    
-
-    <div style="background-color: #eee; padding-top: 1px; margin-top: 40px; padding-bottom: 20px;">
-    <div class="container">
-      <div class="ctitle">Publications</div>
-
-      <div class="pub">
-        <div class="pub-title"><a href="https://arxiv.org/abs/2311.14601">A Metalearned Neural Circuit for Nonparametric Bayesian Inference.</a></div>
-        <div class="pub-venue">Pre-Print. Under review at ICML 2024.</div>
-        <div class="pub-authors">Jake Snell, Gianluca Bencomo, Thomas Griffiths</div>
-      </div>
-
-      <div class="pub">
-        <div class="pub-title"><a href="https://arxiv.org/abs/2311.10580">Implicit Maximum a Posteriori Filtering via Adaptive Optimization.</a></div>
-        <div class="pub-venue">Accepted at ICLR 2024.</div>
-        <div class="pub-authors">Gianluca Bencomo, Jake Snell, Thomas Griffiths</div>
-      </div>
-
-      <div class="pub">
-        <div class="pub-title"><a href="https://doi.org/10.1063/5.0166172">Vendi Sampling For Molecular Simulations: Diversity As A Force For Faster Convergence And Better Exploration.</a></div>
-        <div class="pub-venue">Journal of Chemical Physics.</div>
-        <div class="pub-authors">Amey Pasarkar, Gianluca Bencomo, Simon Olsson, Adji Bousso Dieng</div>
-      </div>
+      <!-- Publications Section -->
+      <section id="publications" class="container">
+        <h2>Publications</h2>
 
 
-      <div class="pub">
-        <div class="pub-title"><a href="https://karger.com/bbe/article/95/5/272/47302/Illusions-Delusions-and-Your-Backwards-Bayesian">Illusions, Delusions, and Your Backwards Bayesian Brain: A Biased Visual Perspective.</a></div>
-        <div class="pub-venue">Brain, Behavior and Evolution.</div>
-        <div class="pub-authors">Richard Born, Gianluca Bencomo</div>
-      </div>
+        <div class="pub">
+          <img src="img/contrastive.jpg" alt="Publication Image" class="pub-img">
+          <div>
+            <p class="pub-title">
+              <a href="https://arxiv.org/abs/2405.19420">Using Contrastive Learning with Generative Similarity to Learn Spaces that Capture Human Inductive Biases.</a>
+            </p>
+            <p class="pub-venue">Pre-Print.</p>
+            <p class="pub-authors">Raja Marjieh, Sreejan Kumar, Declan Campbell, Liyi Zhang, Gianluca Bencomo, Jake Snell, Thomas Griffiths</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)">Show Abstract</button>
+            <p class="pub-abstract hidden">Humans rely on strong inductive biases to learn from few examples and abstract useful information from sensory data. Instilling such biases in machine learning models has been shown to improve their performance on various benchmarks including few-shot learning, robustness, and alignment. However, finding effective training procedures to achieve that goal can be challenging as psychologically-rich training data such as human similarity judgments are expensive to scale, and Bayesian models of human inductive biases are often intractable for complex, realistic domains. Here, we address this challenge by introducing a Bayesian notion of generative similarity whereby two datapoints are considered similar if they are likely to have been sampled from the same distribution. This measure can be applied to complex generative processes, including probabilistic programs. We show that generative similarity can be used to define a contrastive learning objective even when its exact form is intractable, enabling learning of spatial embeddings that express specific inductive biases. We demonstrate the utility of our approach by showing that it can be used to capture human inductive biases for geometric shapes, distinguish different abstract drawing styles that are parameterized by probabilistic programs, and capture abstract high-level categories that enable generalization.</p>
+          </div>
+        </div>
 
-    </div>
-    </div>
-<!-- 
-    <div class="container">
-      <div class="ctitle">Notes</div>
-      <h5>I write notes for myself but post them here so others might benefit. There may be errata due to the unpublished nature of this work. Please contact me if you spot a mistake. Additionally, if these notes prove helpful, or give you an idea, feel free to contact me. My goal with these notes are to provide at least partially novel treatments of important ideas within my wheelhouse of interests.
-</h5>
-      <div class="pub">
-        <div class="pub-title"><a href="./notes/importancesampling.pdf">Importance Sampling.</a></div>
-        <div class="pub-venue">6 August 2023</div>
-      </div>
-      
-    </div>    
--->
-  
-    </body>
+        <div class="pub">
+          <img src="img/circuit.jpg" alt="Publication Image" class="pub-img">
+          <div>
+            <p class="pub-title">
+              <a href="https://arxiv.org/abs/2311.14601">A Metalearned Neural Circuit for Nonparametric Bayesian Inference.</a>
+            </p>
+            <p class="pub-venue">NeurIPS 2024.</p>
+            <p class="pub-authors">Jake Snell, Gianluca Bencomo, Thomas Griffiths</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)">Show Abstract</button>
+            <p class="pub-abstract hidden">Most applications of machine learning to classification assume a closed set of balanced classes. This is at odds with the real world, where class occurrence statistics often follow a long-tailed power-law distribution and it is unlikely that all classes are seen in a single sample. Nonparametric Bayesian models naturally capture this phenomenon, but have significant practical barriers to widespread adoption, namely implementation complexity and computational inefficiency. To address this, we present a method for extracting the inductive bias from a nonparametric Bayesian model and transferring it to an artificial neural network. By simulating data with a nonparametric Bayesian prior, we can metalearn a sequence model that performs inference over an unlimited set of classes. After training, this "neural circuit" has distilled the corresponding inductive bias and can successfully perform sequential inference over an open set of classes. Our experimental results show that the metalearned neural circuit achieves comparable or better performance than particle filter-based methods for inference in these models while being faster and simpler to use than methods that explicitly incorporate Bayesian nonparametric inference.</p>
+          </div>
+        </div>
+
+
+        <div class="pub">
+          <img src="img/implicit.jpg" alt="Publication Image" class="pub-img">
+          <div>
+            <p class="pub-title">
+              <a href="https://arxiv.org/abs/2311.10580">Implicit Maximum a Posteriori Filtering via Adaptive Optimization.</a>
+            </p>
+            <p class="pub-venue">ICLR 2024.</p>
+            <p class="pub-authors">Gianluca Bencomo, Jake Snell, Thomas Griffiths</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)">Show Abstract</button>
+            <p class="pub-abstract hidden">Bayesian filtering approximates the true underlying behavior of a time-varying system by inverting an explicit generative model to convert noisy measurements into state estimates. This process typically requires either storage, inversion, and multiplication of large matrices or Monte Carlo estimation, neither of which are practical in high-dimensional state spaces such as the weight spaces of artificial neural networks. Here, we frame the standard Bayesian filtering problem as optimization over a time-varying objective. Instead of maintaining matrices for the filtering equations or simulating particles, we specify an optimizer that defines the Bayesian filter implicitly. In the linear-Gaussian setting, we show that every Kalman filter has an equivalent formulation using K steps of gradient descent. In the nonlinear setting, our experiments demonstrate that our framework results in filters that are effective, robust, and scalable to high-dimensional systems, comparing well against the standard toolbox of Bayesian filtering solutions. We suggest that it is easier to fine-tune an optimizer than it is to specify the correct filtering equations, making our framework an attractive option for high-dimensional filtering problems.</p>
+          </div>
+        </div>
+        
+
+        <div class="pub">
+          <img src="img/vendi.jpg" alt="Publication Image" class="pub-img">
+          <div>
+            <p class="pub-title">
+              <a href="https://doi.org/10.1063/5.0166172">Vendi Sampling For Molecular Simulations: Diversity As A Force For Faster Convergence And Better Exploration.</a>
+            </p>
+            <p class="pub-venue">Journal of Chemical Physics.</p>
+            <p class="pub-authors">Amey Pasarkar, Gianluca Bencomo, Simon Olsson, Adji Bousso Dieng</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)">Show Abstract</button>
+            <p class="pub-abstract hidden">Molecular dynamics (MD) is the method of choice for understanding the structure, function, and interactions of molecules. However, MD simulations are limited by the strong metastability of many molecules, which traps them in a single conformation basin for an extended amount of time. Enhanced sampling techniques, such as metadynamics and replica exchange, have been developed to overcome this limitation and accelerate the exploration of complex free energy landscapes. In this paper, we propose Vendi Sampling, a replica-based algorithm for increasing the efficiency and efficacy of the exploration of molecular conformation spaces. In Vendi sampling, replicas are simulated in parallel and coupled via a global statistical measure, the Vendi Score, to enhance diversity. Vendi sampling allows for the recovery of unbiased sampling statistics and dramatically improves sampling efficiency. We demonstrate the effectiveness of Vendi sampling in improving molecular dynamics simulations by showing significant improvements in coverage and mixing between metastable states and convergence of free energy estimates for four common benchmarks, including Alanine Dipeptide and Chignolin.</p>
+          </div>
+        </div>
+
+
+        <div class="pub">
+          <img src="img/brain.jpg" alt="Publication Image" class="pub-img">
+          <div>
+            <p class="pub-title">
+              <a href="https://karger.com/bbe/article-abstract/95/5/272/47302/Illusions-Delusions-and-Your-Backwards-Bayesian?redirectedFrom=fulltext">Illusions, Delusions, and Your Backwards Bayesian Brain: A Biased Visual Perspective.</a>
+            </p>
+            <p class="pub-venue">Brain, Behavior and Evolution.</p>
+            <p class="pub-authors">Richard Born, Gianluca Bencomo</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)">Show Abstract</button>
+            <p class="pub-abstract hidden">The retinal image is insufficient for determining what is “out there,” because many different real-world geometries could produce any given retinal image. Thus, the visual system must infer which external cause is most likely, given both the sensory data and prior knowledge that is either innate or learned via interactions with the environment. We will describe a general framework of “hierarchical Bayesian inference” that we and others have used to explore the role of cortico-cortical feedback in the visual system, and we will further argue that this approach to “seeing” makes our visual systems prone to perceptual errors in a variety of different ways. In this deliberately provocative and biased perspective, we argue that the neuromodulator, dopamine, may be a crucial link between neural circuits performing Bayesian inference and the perceptual idiosyncrasies of people with schizophrenia.</p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Gianluca Bencomo</p>
+    </footer>
+
+    <script>
+      function toggleAbstract(button) {
+        const abstract = button.nextElementSibling;
+        if (abstract.classList.contains("hidden")) {
+          abstract.classList.remove("hidden");
+          button.textContent = "Hide Abstract";
+        } else {
+          abstract.classList.add("hidden");
+          button.textContent = "Show Abstract";
+        }
+      }
+    </script>
+  </body>
 </html>
+
