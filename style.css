@@ -178,25 +178,27 @@ footer {
 
 
 /* Mobile-friendly layout */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .header-container {
     flex-direction: column;
-    align-items: flex-start; /* Put everything on separate lines */
+    align-items: center;
+    justify-content: center; /* overrides space-between */
   }
 
   .header-left,
   .header-right {
+    display: flex;
+    justify-content: center;
     width: 100%;
   }
 
   .header-left {
-    margin-bottom: 1rem; 
+    margin-bottom: 0.2rem; 
   }
 
   .header-right a {
     margin-left: 0;
     margin-right: 1rem;
-    margin-bottom: 0.5rem;
   }
 
   .header-right a:last-child {
@@ -220,4 +222,10 @@ footer {
   .pub-img {
     margin-bottom: 1rem;
   }
+
+  .pub > div {
+    text-align: left; 
+    width: 100%; /* Optional: ensures it uses the full width for left alignment */
+  }
+
 }
