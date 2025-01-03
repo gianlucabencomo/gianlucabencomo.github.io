@@ -139,14 +139,19 @@ header {
 
 /* Abstract toggle button */
 .abstract-btn {
-  display: inline-block;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: #e0e0e0;
+  color: #333;
   border: none;
   padding: 0.4rem 0.8rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
   border-radius: 4px;
   font-size: 0.9rem;
+  text-decoration: none;
+  outline: none;
 }
 
 .abstract-btn:hover {
@@ -171,15 +176,31 @@ footer {
   font-size: 0.9rem;
 }
 
+
 /* Mobile-friendly layout */
 @media (max-width: 600px) {
-  .pub {
+  .header-container {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; /* Put everything on separate lines */
   }
 
-  .pub-img {
-    margin-bottom: 1rem;
+  .header-left,
+  .header-right {
+    width: 100%;
+  }
+
+  .header-left {
+    margin-bottom: 1rem; 
+  }
+
+  .header-right a {
+    margin-left: 0;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .header-right a:last-child {
+    margin-bottom: 0;
   }
 
   .bio-content {
@@ -190,5 +211,13 @@ footer {
   .bio-img {
     margin-bottom: 1rem;
   }
-}
 
+  .pub {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pub-img {
+    margin-bottom: 1rem;
+  }
+}
