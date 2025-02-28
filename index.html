@@ -52,6 +52,19 @@
       <section id="publications" class="container">
         <h2>Publications</h2>
 
+        <div class="pub">
+          <img src="img/teasing.jpg" alt="Publication Image" class="pub-img">
+          <div>
+            <p class="pub-title">
+              <a href="http://arxiv.org/abs/2502.20237">Teasing Apart Architecture and Initial Weights as Sources of Inductive Bias in Neural Networks.</a>
+            </p>
+            <p class="pub-venue">Pre-Print.</p>
+            <p class="pub-authors">Gianluca Bencomo, Max Gupta, Ioana Marinescu, R. Thomas McCoy, Thomas L. Griffiths</p>
+            <button class="abstract-btn" onclick="toggleAbstract(this)">Show Abstract</button>
+            <p class="pub-abstract hidden">Artificial neural networks can acquire many aspects of human knowledge from data, making them promising as models of human learning. But what those networks can learn depends upon their inductive biases -- the factors other than the data that influence the solutions they discover -- and the inductive biases of neural networks remain poorly understood, limiting our ability to draw conclusions about human learning from the performance of these systems. Cognitive scientists and machine learning researchers often focus on the architecture of a neural network as a source of inductive bias. In this paper we explore the impact of another source of inductive bias -- the initial weights of the network -- using meta-learning as a tool for finding initial weights that are adapted for specific problems. We evaluate four widely-used architectures -- MLPs, CNNs, LSTMs, and Transformers -- by meta-training 430 different models across three tasks requiring different biases and forms of generalization. We find that meta-learning can substantially reduce or entirely eliminate performance differences across architectures and data representations, suggesting that these factors may be less important as sources of inductive bias than is typically assumed. When differences are present, architectures and data representations that perform well without meta-learning tend to meta-train more effectively. Moreover, all architectures generalize poorly on problems that are far from their meta-training experience, underscoring the need for stronger inductive biases for robust generalization.</p>
+          </div>
+        </div>
+
 
         <div class="pub">
           <img src="img/contrastive.jpg" alt="Publication Image" class="pub-img">
